@@ -1,3 +1,11 @@
+.posts-expand .post-body img {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 3px;
+}
+.post-gallery .post-gallery-img img {
+  padding: 3px;
+}
 /* normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif; /* 1 */
@@ -1822,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #367c1c;
+  background: #3467d4;
 }
 .links-of-blogroll {
   font-size: 13px;
