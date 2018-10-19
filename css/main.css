@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffba;
+  background: #367c1c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2969,8 +2969,9 @@ pre .javascript .function {
   }
 }
 .posts-expand .post-body img {
-  border: none;
-  padding: 0px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 3px;
 }
 .post-gallery .post-gallery-img img {
   padding: 3px;
