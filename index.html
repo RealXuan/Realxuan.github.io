@@ -363,7 +363,7 @@
           <blockquote>
 <p>导语：FM是由Steffen Rendle于2010年提出的一种基于矩阵分解的机器学习模型，解决了CTR预估任务中稀疏数据的特征组合问题，在推荐和计算广告领域中得到广泛应用。本文将从背景、原理以及基于TensorFlow的代码实现三方面详细介绍FM模型。</p>
 </blockquote>
-<h2 id="1-FM的背景"><a href="#1-FM的背景" class="headerlink" title="1.FM的背景"></a>1.FM的背景</h2><p>在CTR预估的问题中存在大量的Categorical特征，我们通常的处理方法是对Categorical特征进行one-hot编码处理成0-1的二值特征，以保证不同Categorical特征之间的距离一致。形如：<br><img src="/images/1018_pic1.PNG" alt="upload successful"><br>可以看出，特征不同的取值个数决定了one-hot编码之后特征维度，并且其中只有1维特征是1，其余的都是0。所以one-hot编码会使得特征变得高维并且稀疏，很难进行特征组合得到高阶的交叉特征。那为什么要进行特征组合呢？实际上，大量的特征之间存在潜在的关联。举个简单例子，女性用户倾向于点击化妆品、服装类型的物品，而男性用户则倾向于点击运动、电子类的物品，所以相比于一阶特征，性别交叉物品种类的二阶特征会对CTR预估有更重要的作用。</p>
+<h2 id="1-FM的背景"><a href="#1-FM的背景" class="headerlink" title="1.FM的背景"></a>1.FM的背景</h2><p>在CTR预估的问题中存在大量的Categorical特征，我们通常的处理方法是对Categorical特征进行one-hot编码处理成0-1的二值特征，以保证不同Categorical特征之间的距离一致。形如：<br><img src="/images/1018_pic1.PNG" alt="upload successful"><br>可以看出，特征不同的取值个数决定了one-hot编码之后特征维度，并且其中只有1维特征是1，其余的都是0。所以one-hot编码会使得特征变得高维并且稀疏，很难进行特征组合得到高阶的交叉特征。那为什么要进行特征组合呢？实际上，大量的特征之间存在潜在的关联。举个简单例子，女性用户倾向于点击化妆品、服装类型的物品，而男性用户则倾向于点击运动、电子类的物品，所以相比一阶特征，性别交叉物品种类的二阶特征会对CTR预估有更重要的作用。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/10/18/test/#more" rel="contents">
