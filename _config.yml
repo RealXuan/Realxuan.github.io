@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: 华遥的剥壳( • ̀ω•́ )✧
+subtitle: 有趣的灵魂终将相遇
+description: 岁月长 衣裳薄
+author: 华遥
+language: zh-Hans
 timezone:
 
 # URL
@@ -34,7 +34,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -72,11 +72,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/RealXuan/Realxuan.github.io.git
+  #repo: https://github.com/RealXuan/Realxuan.github.io.git
+  repo: https://RealXuan:13481210297zx@github.com/RealXuan/Realxuan.github.io.git
   branch: master
+
+
+
+
