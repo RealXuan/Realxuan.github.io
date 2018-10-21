@@ -747,6 +747,7 @@ function addCount(Counter) {
 					success: function(counter) {
 						var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
 						$(document.getElementById(url)).text(content);
+						return;
 					},
 					error: function(counter, error) {
 						console.log('Failed to save Visitor num, with error message: ' + error.message);
@@ -777,9 +778,9 @@ function addCount(Counter) {
 $(function() {
 	var Counter = AV.Object.extend("Counter");
 	if ($('.leancloud_visitors').length == 1) {
-		addCount(Counter);
+		showTime(Counter);
 	} else if ($('.post-title-link').length > 1) {
-		addCount(Counter);
+		showTime(Counter);
 	}
 });
 </script>
