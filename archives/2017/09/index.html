@@ -781,10 +781,6 @@ function showTime(Counter) {
 					$(document.getElementById(url)).text(content);
 					return;
 				}
-				console.log(results['sss']);
-				var object = results[0];
-				var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
-				$(document.getElementById(url)).text(content);
 				
 			},
 			error: function(object, error) {
