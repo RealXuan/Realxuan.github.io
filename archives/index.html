@@ -817,7 +817,7 @@ function showTime(Counter) {
 		query.find({
 			success: function(results) {
 				if (results.length == 0) {
-					var content = $(document.getElementById(url)).text() + ': 0';
+					var content = $(document.getElementById(url)).text() ;
 					$(document.getElementById(url)).text(content);
 					return;
 				}
@@ -881,7 +881,7 @@ function addCount(Counter) {
 $(function() {
 	var Counter = AV.Object.extend("Counter");
 	if ($('.leancloud_visitors').length == 1) {
-		showTime(Counter);
+		addCount(Counter);
 	} else if ($('.post-title-link').length > 1) {
 		showTime(Counter);
 	}
