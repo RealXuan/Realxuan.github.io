@@ -1012,12 +1012,11 @@ function showTime(Counter) {
 					$(document.getElementById(url)).text(content);
 					return;
 				}
-				else{
-					for (var i = 0; i < results.length; i++) {
-						var object = results[i];
-						var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
-					$(document.getElementById(url)).text(content);
-				}
+
+				var object = results[0];
+				var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
+				$(document.getElementById(url)).text(content);
+
 				}
 			},
 			error: function(object, error) {
