@@ -1014,11 +1014,11 @@ function showTime(Counter) {
 					$(document.getElementById(url)).text(content);
 					return;
 				}
-				for (var i = 0; i < results.length; i++) {
-					var object = results[i];
-					var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
-					$(document.getElementById(url)).text(content);
-				}
+				console.log(results['sss']);
+				var object = results[0];
+				var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
+				$(document.getElementById(url)).text(content);
+				
 			},
 			error: function(object, error) {
 				console.log("Error: " + error.code + " " + error.message);
