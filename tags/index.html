@@ -711,6 +711,7 @@ function showTime(Counter) {
 		query.equalTo("url", url);
 		query.find({
 			success: function(results) {
+				console.log('xxxx');
 				console.log(results[0]);
 				if (results.length == 0) {
 					var content = $(document.getElementById(url)).text() + ': 0';
