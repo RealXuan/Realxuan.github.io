@@ -1219,6 +1219,9 @@ function showTime(Counter) {
 		query.equalTo("url", url);
 		query.find({
 			success: function(results) {
+				console.log(results);
+				console.log(results.length);
+				alter(results.length);
 				if (results.length == 0) {
 					var content = $(document.getElementById(url)).text() + ': 0';
 					$(document.getElementById(url)).text(content);
