@@ -723,6 +723,7 @@ function showTime(Counter) {
 				console.log(results[0].get('time'));
 				if (results.length == 0) {
 					var content = $(document.getElementById(url)).text() + ': 0';
+					console.log(content);
 					$(document.getElementById(url)).text(content);
 					return;
 				}
@@ -732,7 +733,7 @@ function showTime(Counter) {
 				$(document.getElementById(url)).text(content);
 				
 			},
-			error: function(object, error) {
+			error: function(object, error) { 
 				console.log("Error: " + error.code + " " + error.message);
 			}
 		});
