@@ -1221,7 +1221,7 @@ function showTime(Counter) {
 			success: function(results) {
 				console.log('xxxx');
 				console.log(results.length);
-				console.log(results[0]);
+				console.log(results[0].get('time'));
 				if (results.length == 0) {
 					var content = $(document.getElementById(url)).text() + ': 0';
 					$(document.getElementById(url)).text(content);
