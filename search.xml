@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>test</title>
+      <link href="/2018/10/22/test/"/>
+      <url>/2018/10/22/test/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>导语：FM是由Steffen Rendle于2010年提出的一种基于矩阵分解的机器学习模型，解决了CTR预估任务中稀疏数据的特征组合问题，在推荐和计算广告领域中得到广泛应用。本文将从背景、原理以及基于TensorFlow的代码实现三方面详细介绍FM模型。</p></blockquote><h2 id="1-FM的背景"><a href="#1-FM的背景" class="headerlink" title="1.FM的背景"></a>1.FM的背景</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 推荐与CTR </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>FM(Factorization Machine)模型</title>
       <link href="/2018/10/18/FM(Factorization%20Machine)%E6%A8%A1%E5%9E%8B/"/>
       <url>/2018/10/18/FM(Factorization%20Machine)%E6%A8%A1%E5%9E%8B/</url>
