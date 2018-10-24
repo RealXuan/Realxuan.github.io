@@ -76,11 +76,22 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+social:
+  GitHub: https://github.com/RealXuan || github
+  E-Mail: 89748025@qq.com || envelope
+  
 deploy:
   type: git
   #repo: https://github.com/RealXuan/Realxuan.github.io.git
   repo: https://RealXuan:13481210297zx@github.com/RealXuan/Realxuan.github.io.git
   branch: master
+
+# Local seach
+# search:
+#   path: search.xml
+#   field: post
+#   format: html
+#   limit: 10000
 
 
 
