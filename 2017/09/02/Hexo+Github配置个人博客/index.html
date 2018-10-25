@@ -105,7 +105,7 @@
 <meta property="og:image" content="http://yoursite.com/images/1025_pic1.PNG">
 <meta property="og:image" content="http://yoursite.com/images/1025_pic2.PNG">
 <meta property="og:image" content="http://yoursite.com/images/1025_pic3.PNG">
-<meta property="og:updated_time" content="2018-10-25T13:45:49.099Z">
+<meta property="og:updated_time" content="2018-10-25T13:52:05.606Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github配置个人博客">
 <meta name="twitter:description" content="导语：Hexo+Github是利用Hexo框架迅速创建博客网站，并将网站代码托管到GitHub上的一种方式，具有开源、优雅、高效等特点。本文主要记录使用Hexo+Github配置个人博客的过程，包括安装、部署、使用以及美化。  Hexo与GitHubHexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。G">
@@ -559,6 +559,24 @@ mathjax: true
   app_key:
 </code></pre>
 <p>app_id和app_key的值来源于下图：<br><img src="/images/1025_pic3.PNG" alt="upload successful"></p>
+<h3 id="博客添加站内搜索"><a href="#博客添加站内搜索" class="headerlink" title="博客添加站内搜索"></a>博客添加站内搜索</h3><p>安装站内搜索插件</p>
+<pre><code class="lang-python">$  npm install hexo-generator-searchdb --save
+</code></pre>
+<p>根目录下的_config.yml添加：</p>
+<pre><code class="lang-python">#表示站内搜索
+search:
+    path: search.xml
+    field: post
+    format: html
+    limit: 10000
+</code></pre>
+<p>next目录下的_config.yml添加：</p>
+<pre><code class="lang-python">local_search:
+  enable: true  #设置为true
+  trigger: auto  # auto /  manual，auto 自动搜索、manual：按回车[enter ]键手动搜索
+  top_n_per_article: 1
+  unescape: true
+</code></pre>
 
       
     </div>
@@ -757,7 +775,7 @@ mathjax: true
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo与GitHub"><span class="nav-number">1.</span> <span class="nav-text">Hexo与GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-安装Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">1.安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-安装Git"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-安装Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">3.安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo建站"><span class="nav-number">3.</span> <span class="nav-text">Hexo建站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-初始化站点"><span class="nav-number">3.1.</span> <span class="nav-text">1.初始化站点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-本地访问"><span class="nav-number">3.2.</span> <span class="nav-text">2.本地访问</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-部署到GitHub上"><span class="nav-number">3.3.</span> <span class="nav-text">3.部署到GitHub上</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">4.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo页面美化"><span class="nav-number">5.</span> <span class="nav-text">Hexo页面美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载主题"><span class="nav-number">5.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给文章添加分类和标签"><span class="nav-number">5.2.</span> <span class="nav-text">给文章添加分类和标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给文章插入图片"><span class="nav-number">5.3.</span> <span class="nav-text">给文章插入图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用LaTex编辑数学公式"><span class="nav-number">5.4.</span> <span class="nav-text">使用LaTex编辑数学公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给文章添加阅读次数"><span class="nav-number">5.5.</span> <span class="nav-text">给文章添加阅读次数</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo与GitHub"><span class="nav-number">1.</span> <span class="nav-text">Hexo与GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-安装Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">1.安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-安装Git"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-安装Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">3.安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo建站"><span class="nav-number">3.</span> <span class="nav-text">Hexo建站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-初始化站点"><span class="nav-number">3.1.</span> <span class="nav-text">1.初始化站点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-本地访问"><span class="nav-number">3.2.</span> <span class="nav-text">2.本地访问</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-部署到GitHub上"><span class="nav-number">3.3.</span> <span class="nav-text">3.部署到GitHub上</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">4.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo页面美化"><span class="nav-number">5.</span> <span class="nav-text">Hexo页面美化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载主题"><span class="nav-number">5.1.</span> <span class="nav-text">下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给文章添加分类和标签"><span class="nav-number">5.2.</span> <span class="nav-text">给文章添加分类和标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给文章插入图片"><span class="nav-number">5.3.</span> <span class="nav-text">给文章插入图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用LaTex编辑数学公式"><span class="nav-number">5.4.</span> <span class="nav-text">使用LaTex编辑数学公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给文章添加阅读次数"><span class="nav-number">5.5.</span> <span class="nav-text">给文章添加阅读次数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博客添加站内搜索"><span class="nav-number">5.6.</span> <span class="nav-text">博客添加站内搜索</span></a></li></ol></li></ol></div>
             
 
           </div>
