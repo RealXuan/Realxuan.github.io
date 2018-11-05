@@ -95,17 +95,17 @@
 
 
 
-<meta name="description" content="导语：Jupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视化和 markdown。 用途包括：数据清理和转换，数值模拟，统计建模，机器学习等等。在做大数据量的特征工程以及数据建模的时候，由于个人电脑内存较小，我们往往需要借助于一台内存足够大的Linux服务器。在Linux服务器上配置Jupyter Notebook的远程访问">
+<meta name="description" content="导语：在做大数据量的特征工程以及数据建模的时候，由于个人电脑内存较小，我们往往需要借助于一台内存足够大的Linux服务器。在Linux服务器上配置Jupyter Notebook的远程访问，能够方便我们在本地直接通过浏览器远程使用服务器。  Jupyter NotebookJupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux上配置Jupyter Notebook远程访问">
 <meta property="og:url" content="http://yoursite.com/2018/11/05/Linux上配置Jupyter Notebook远程访问/index.html">
 <meta property="og:site_name" content="华遥的剥壳( • ̀ω•́ )✧">
-<meta property="og:description" content="导语：Jupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视化和 markdown。 用途包括：数据清理和转换，数值模拟，统计建模，机器学习等等。在做大数据量的特征工程以及数据建模的时候，由于个人电脑内存较小，我们往往需要借助于一台内存足够大的Linux服务器。在Linux服务器上配置Jupyter Notebook的远程访问">
+<meta property="og:description" content="导语：在做大数据量的特征工程以及数据建模的时候，由于个人电脑内存较小，我们往往需要借助于一台内存足够大的Linux服务器。在Linux服务器上配置Jupyter Notebook的远程访问，能够方便我们在本地直接通过浏览器远程使用服务器。  Jupyter NotebookJupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-05T09:10:27.833Z">
+<meta property="og:updated_time" content="2018-11-05T09:17:57.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux上配置Jupyter Notebook远程访问">
-<meta name="twitter:description" content="导语：Jupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视化和 markdown。 用途包括：数据清理和转换，数值模拟，统计建模，机器学习等等。在做大数据量的特征工程以及数据建模的时候，由于个人电脑内存较小，我们往往需要借助于一台内存足够大的Linux服务器。在Linux服务器上配置Jupyter Notebook的远程访问">
+<meta name="twitter:description" content="导语：在做大数据量的特征工程以及数据建模的时候，由于个人电脑内存较小，我们往往需要借助于一台内存足够大的Linux服务器。在Linux服务器上配置Jupyter Notebook的远程访问，能够方便我们在本地直接通过浏览器远程使用服务器。  Jupyter NotebookJupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视">
 
 
 
@@ -403,8 +403,9 @@
 
       
         <blockquote>
-<p>导语：Jupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视化和 markdown。 用途包括：数据清理和转换，数值模拟，统计建模，机器学习等等。在做大数据量的特征工程以及数据建模的时候，由于个人电脑内存较小，我们往往需要借助于一台内存足够大的Linux服务器。在Linux服务器上配置Jupyter Notebook的远程访问，能够方便我们在本地直接通过浏览器远程使用服务器。</p>
+<p>导语：在做大数据量的特征工程以及数据建模的时候，由于个人电脑内存较小，我们往往需要借助于一台内存足够大的Linux服务器。在Linux服务器上配置Jupyter Notebook的远程访问，能够方便我们在本地直接通过浏览器远程使用服务器。</p>
 </blockquote>
+<h2 id="Jupyter-Notebook"><a href="#Jupyter-Notebook" class="headerlink" title="Jupyter Notebook"></a>Jupyter Notebook</h2><p>Jupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档，支持实时代码，数学方程，可视化和 markdown。 用途包括：数据清理和转换，数值模拟，统计建模，机器学习等等。</p>
 <h2 id="Linux上修改Jupyter配置文件"><a href="#Linux上修改Jupyter配置文件" class="headerlink" title="Linux上修改Jupyter配置文件"></a>Linux上修改Jupyter配置文件</h2><h3 id="1-生成Jupyter配置文件"><a href="#1-生成Jupyter配置文件" class="headerlink" title="1.生成Jupyter配置文件"></a>1.生成Jupyter配置文件</h3><pre><code class="lang-python">$ /root/.jupyter/jupyter_notebook_config.py  #/root/是服务器的根目录
 </code></pre>
 <h3 id="2-生成密码"><a href="#2-生成密码" class="headerlink" title="2.生成密码"></a>2.生成密码</h3><pre><code class="lang-python">$ ipython
@@ -412,10 +413,10 @@
 <p>进入python命令编辑界面</p>
 <pre><code class="lang-python">In [1]: from notebook.auth import passwd
 In [2]: passwd()
-Enter password:(输入你的密码)
-Verify password:(再次输入你的密码)
+Enter password: #输入你的密码
+Verify password: #再次输入你的密码
 
-Out[2]:&#39;sha1:sdjh2yu3h2g27y4efuhf2h&#39;(你的密码生成的哈希值，复制它)
+Out[2]:&#39;sha1:sdjh2yu3h2g27y4efuhf2h&#39; #你的密码生成的哈希值，复制它
 </code></pre>
 <h3 id="3-修改Jupyter默认配置文件"><a href="#3-修改Jupyter默认配置文件" class="headerlink" title="3.修改Jupyter默认配置文件"></a>3.修改Jupyter默认配置文件</h3><pre><code class="lang-python">$ gedit /root/.jupyter/jupyter_notebook_config.py
 </code></pre>
@@ -427,7 +428,7 @@ c.NotebookApp.port=9999 #指定访问的端口号
 </code></pre>
 <h3 id="4-启动Jupyter-Notebook"><a href="#4-启动Jupyter-Notebook" class="headerlink" title="4.启动Jupyter Notebook"></a>4.启动Jupyter Notebook</h3><pre><code class="lang-python">$ Jupyter Notebook
 </code></pre>
-<h3 id="本地访问"><a href="#本地访问" class="headerlink" title="本地访问"></a>本地访问</h3><p>打开浏览器，输入<a href="http://服务器ip地址：端口号即可" target="_blank" rel="external">http://服务器ip地址：端口号即可</a><br>如果遇到jupyter SSL Error 问题，则可能是SSL协议不对，改成https即可</p>
+<h3 id="本地访问"><a href="#本地访问" class="headerlink" title="本地访问"></a>本地访问</h3><p>打开浏览器，输入 <a href="http://服务器ip地址：端口号" target="_blank" rel="external">http://服务器ip地址：端口号</a> 即可<br>如果遇到jupyter SSL Error 问题，则可能是SSL协议不对，改成https即可</p>
 
       
     </div>
@@ -617,7 +618,7 @@ c.NotebookApp.port=9999 #指定访问的端口号
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux上修改Jupyter配置文件"><span class="nav-number">1.</span> <span class="nav-text">Linux上修改Jupyter配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-生成Jupyter配置文件"><span class="nav-number">1.1.</span> <span class="nav-text">1.生成Jupyter配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-生成密码"><span class="nav-number">1.2.</span> <span class="nav-text">2.生成密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-修改Jupyter默认配置文件"><span class="nav-number">1.3.</span> <span class="nav-text">3.修改Jupyter默认配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-启动Jupyter-Notebook"><span class="nav-number">1.4.</span> <span class="nav-text">4.启动Jupyter Notebook</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地访问"><span class="nav-number">1.5.</span> <span class="nav-text">本地访问</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Jupyter-Notebook"><span class="nav-number">1.</span> <span class="nav-text">Jupyter Notebook</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux上修改Jupyter配置文件"><span class="nav-number">2.</span> <span class="nav-text">Linux上修改Jupyter配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-生成Jupyter配置文件"><span class="nav-number">2.1.</span> <span class="nav-text">1.生成Jupyter配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-生成密码"><span class="nav-number">2.2.</span> <span class="nav-text">2.生成密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-修改Jupyter默认配置文件"><span class="nav-number">2.3.</span> <span class="nav-text">3.修改Jupyter默认配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-启动Jupyter-Notebook"><span class="nav-number">2.4.</span> <span class="nav-text">4.启动Jupyter Notebook</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地访问"><span class="nav-number">2.5.</span> <span class="nav-text">本地访问</span></a></li></ol></li></ol></div>
             
 
           </div>
